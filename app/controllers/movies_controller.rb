@@ -8,4 +8,9 @@ class MoviesController < ApplicationController
     movie = Movie.first
     render json: { message: movie }
   end
+
+  def find_movie
+    input_movie = params["my_message"]
+    render json: { message: input_movie }
+  end
 end
