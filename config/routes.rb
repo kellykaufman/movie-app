@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   post "/one_movie" => "movies#one_movie"
 
   get "/find_movie" => "movies#find_movie"
+
+  get "/one_actor" =>
 end
