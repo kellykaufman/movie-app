@@ -1,6 +1,7 @@
-POST http://localhost:3000/one_movie.json
+POST http://localhost:3000/actor_body.json
 Content-Type: application/json
 
 {
-  movie
+  "movie": 3
 }
+
