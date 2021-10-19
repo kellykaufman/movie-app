@@ -1,23 +1,9 @@
-class Actor < ApplicationRecord
-  def actors
-    puts Actor.id
+class ActorsController < ApplicationController
+  def index
+    render json: Actor.all
   end
 
-  def actor_query
-    id = Actor.find_by(id: params["id"])
-    actor = params[id]
-    render json: { message: actor }
-  end
-
-  # def actor_seg
-  #   id = params[:wildcard]
-  #   find_actor = Actor.find_by (id: id)
-  #   render json: { message: actor }
-  # end
-
-  def actor_body
-    id = params["actor"]
-    find_actor = Actor.find_by(id: id)
-    render json: { message: find_actor }
+  def show
+    render json: Actor.find_by(id: params["id"]).as_json
   end
 end

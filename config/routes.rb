@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
-  get "/actor" => "actors#actors"
+  get "/actors" => "actors#index"
 
-  get "/movies" => "movies#all_movies"
+  get "/movies" => "movies#index"
 
-  post "/one_movie" => "movies#one_movie"
+  post "/movies" => "movies#show"
 
-  get "/find_movie" => "movies#find_movie"
+  get "/movies/:id" => "movies#show"
 
-  get "/single_actor" => "actors#actor_query"
+  get "/actor" => "actors#show"
 
-  get "/single_actor/:wildcard" => "actors#actor_seg"
+  get "/actors/:id" => "actors#show"
 
-  post "/single_actor" => "actors#actor_body"
+  post "/actors" => "actors#show"
 end

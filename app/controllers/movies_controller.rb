@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  def all_movies
+  def index
     movies = Movie.all
     render json: { message: movies }
   end
