@@ -27,3 +27,27 @@ Content-Type: application/json
 ### DELETES ACTOR
 DELETE POST http://localhost:3000/actors/22.json
 
+### CREATES A MOVIE
+POST  http://localhost:3000/movies.json
+Content-Type: application/json
+
+{ "title": "Jacob's Ladder", 
+  "year": 1993, 
+  "plot": "A man suffers the aftermath of the Vietnam war, by dealing with PSTD-induced hallucinations." }
+
+
+### UPDATES A MOVIE
+PATCH http://localhost:3000/movies/3.json
+Content-Type: application/json
+
+{
+  "title": "Paris, Texas",
+  "year": 1984,
+  "plot": "A disheveled man who wanders out of the desert, collects his abandoned son-- and searches for his mother."
+}
+
+### DELETES A MOVIE
+
+DELETE http://localhost:3000/movies/1.json
+
+
