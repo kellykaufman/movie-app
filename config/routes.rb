@@ -1,15 +1,25 @@
 Rails.application.routes.draw do
+  ### ACTOR VERBS
   get "/actors" => "actors#index"
+
+  get "/actor/:id" => "actors#show"
+
+  post "/actors" => "actors#create"
+
+  patch "/actors/:id" => "actors#update"
+
+  delete "actors/:id" => "actors#destroy"
+
+  ### MOVIE VERBS
+  # post "/movies" => "movies#show"
 
   get "/movies" => "movies#index"
 
-  # post "/movies" => "movies#show"
-
   get "/movies/:id" => "movies#show"
 
-  get "/actor" => "actors#show"
+  post "/movies" => "movies#create"
 
-  get "/actors/:id" => "actors#show"
+  patch "/movies/:id" => "movies#update"
 
-  post "/actors" => "actors#show"
+  delete "/movies/:id" => "movies#destroy"
 end

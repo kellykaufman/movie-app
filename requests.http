@@ -1,7 +1,27 @@
+### DISPLAYS ONE ACTOR
 POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
-  "id": 13
+  "id": 12
 }
 
+
+### CREATES ACTOR
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "Christian",
+  "last_name": "Bale",
+  "known_for": "American Psycho"
+}
+
+### UPDATES ACTOR
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "id": 11, 
+  "first_name": "JOsh"
+}
