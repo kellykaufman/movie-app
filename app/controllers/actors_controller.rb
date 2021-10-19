@@ -14,15 +14,17 @@ class ActorsController < ApplicationController
   end
 
   def update
-    actor = Actor.find_by(id: params["id"])
-    actor.first_name = params["first_name"]|| actor.first_name
-    actor.last_name =  params["last_name"]|| actor.last_name
-    actor.known_for = params["known_for"] || actor.known_for
+    actor = Actor.find_by(id: params[:id])
+    actor.first_name = params[:first_name] || actor.first_name
+    actor.last_name = params[:last_name] || actor.last_name
+    actor.known_for = params[:known_for] || actor.known_for
 
-    render json: actor.as_json, actor.first_name.as_json
+    render json: actor.as_json
   end
 
   def destroy
-    
+    actor = Actor.find_by(id: params(:id))
+    actor.destroy
+    render json: { message: "Actor destroyed successfully!" }
   end
 end
