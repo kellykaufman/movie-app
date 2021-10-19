@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get "/movies" => "movies#index"
 
-  post "/movies" => "movies#show"
+  # post "/movies" => "movies#show"
 
   get "/movies/:id" => "movies#show"
 
