@@ -19,3 +19,9 @@ actor = Actor.create(first_name: "Matt", last_name: "Damon", known_for: "Bourne 
 actor = Actor.create(first_name: "Bradley", last_name: "Cooper", known_for: "The Hangover")
 
 actor = Actor.create(first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock")
+
+actor = Actor.create(first_name: "Christina",
+                     last_name: "Hendricks",
+                     known_for: "Mad Men",
+                     gender: "F",
+                     age: 45)

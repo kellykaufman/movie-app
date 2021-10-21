@@ -3,19 +3,19 @@ POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
-  "first_name": "Christian",
-  "last_name": "Bale",
-  "known_for": "American Psycho"
+  "first_name": "Christina",
+  "last_name": "Hendricks",
+  "known_for": "American Psycho",
+  "gender": "F",
+  "age": 45
 }
 
 ### UPDATES ACTOR
-PATCH http://localhost:3000/actors/11.json
+PATCH http://localhost:3000/actors/39.json
 Content-Type: application/json
 
 {
-  "first_name": "Marion",
-  "last_name": "Cottilard",
-  "known_for": "Shutter Island"
+  "known_for": "Mad Men"
 }
 
 ### DELETES ACTOR
