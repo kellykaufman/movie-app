@@ -25,9 +25,11 @@ DELETE http://localhost:3000/actors/15.json
 POST  http://localhost:3000/movies.json
 Content-Type: application/json
 
-{ "title": "Jacob's Ladder", 
-  "year": 1993, 
-  "plot": "A man suffers the aftermath of the Vietnam war, by dealing with PSTD-induced hallucinations." }
+{ "title": "Paris, Texas", 
+  "year": 1984, 
+  "plot": "A disheveled man wanders out of the desert, eventually collecting his abandoned son to find his mother.",
+  "director": "Wim Wenders",
+  "english": "Yes"}
 
 
 ### UPDATES A MOVIE
@@ -35,9 +37,11 @@ PATCH http://localhost:3000/movies/3.json
 Content-Type: application/json
 
 {
-  "title": "Paris, Texas",
-  "year": 1984,
-  "plot": "A disheveled man who wanders out of the desert, collects his abandoned son-- and searches for his mother."
+  "title": "ChungKing Express",
+  "year": 1994,
+  "plot": "Every day, Cop buys a can of pineapple with an expiration date of May 1, symbolizing the day he'll get over his lost love.",
+  "director": "Wong Kar-wai",
+  "english": "No"
 }
 
 ### DELETES A MOVIE
