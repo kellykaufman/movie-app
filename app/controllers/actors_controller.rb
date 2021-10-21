@@ -23,7 +23,7 @@ class ActorsController < ApplicationController
   end
 
   def destroy
-    actor = Actor.find_by(id: params(:id))
+    actor = Actor.find_by(id: params[:id])
     actor.destroy
     render json: { message: "Actor destroyed successfully!" }
   end

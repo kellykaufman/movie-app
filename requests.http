@@ -1,9 +1,3 @@
-### DISPLAYS ONE ACTOR
-POST http://localhost:3000/actors/23.json
-Content-Type: application/json
-
-
-
 ### CREATES ACTOR
 POST http://localhost:3000/actors.json
 Content-Type: application/json
@@ -25,7 +19,7 @@ Content-Type: application/json
 }
 
 ### DELETES ACTOR
-DELETE POST http://localhost:3000/actors/22.json
+DELETE http://localhost:3000/actors/15.json
 
 ### CREATES A MOVIE
 POST  http://localhost:3000/movies.json
@@ -48,6 +42,6 @@ Content-Type: application/json
 
 ### DELETES A MOVIE
 
-DELETE http://localhost:3000/movies/1.json
+DELETE http://localhost:3000/movies/2.json
 
 
