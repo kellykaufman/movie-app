@@ -37,6 +37,7 @@ Content-Type: application/json
 
 
 ### UPDATES A MOVIE
+# MUST FIX TO SHOW: unprocessible entity
 PATCH http://localhost:3000/movies/3.json
 Content-Type: application/json
 
@@ -44,7 +45,7 @@ Content-Type: application/json
   "title": "ChungKing Express",
   "year": 1994,
   "plot": "Every day, Cop buys a can of pineapple with an expiration date of May 1, symbolizing the day he'll get over his lost love.",
-  "director": "Wong Kar-wai",
+  "director": ,
   "english": "No"
 }
 
