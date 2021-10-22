@@ -25,6 +25,7 @@ DELETE http://localhost:3000/actors/15.json
 
 
 ### CREATES A MOVIE
+# MUST FIX TO SHOW: unprocessible entity
 POST  http://localhost:3000/movies.json
 Content-Type: application/json
 
