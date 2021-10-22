@@ -10,7 +10,12 @@ class ActorsController < ApplicationController
   def create
     actor = { first_name: params["first_name"], last_name: params["last_name"], known_for: params["known_for"], gender: params[:gender], age: params[:age] }
 
-    render json: actor.as_json
+    # HAPPY/SAD PATH
+    if actor.save
+      render json: actor
+    else
+      render json: { errors: actor.errors.full_messages, status: :unprocessible_entity }
+    end
   end
 
   def update
@@ -21,7 +26,12 @@ class ActorsController < ApplicationController
     actor.gender = params[:gender] || actor.gender
     actor.age = params[:age] || actor.age
 
-    render json: actor.as_json
+    # HAPPY/SAD PATH
+    if actor.save
+      render json: actor
+    else
+      render json: { errors: actor.errors.full_messages, status: :unprocessible_entity }
+    end
   end
 
   def destroy

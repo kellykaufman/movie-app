@@ -25,3 +25,14 @@ actor = Actor.create(first_name: "Christina",
                      known_for: "Mad Men",
                      gender: "F",
                      age: 45)
+
+actor = Actor.create(first_name: "Kelly",
+                     last_name: "Kaufman",
+                     known_for: "Kelly's Ladder", gender: "F",
+                     age: 30)
+
+actor = Actor.create(first_name: "Winona",
+                     last_name: "Ryder",
+                     known_for: "Heathers",
+                     gender: "F",
+                     age: 50)
