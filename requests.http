@@ -3,29 +3,32 @@ POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
-  "first_name": "Christina",
-  "last_name": "Hendricks",
-  "known_for": "American Psycho",
-  "gender": "F",
-  "age": 45
+  "first_name": "",
+  "last_name": "P",
+  "known_for": " Club",
+  "gender": "M",
+  "age": 1
 }
 
 ### UPDATES ACTOR
-PATCH http://localhost:3000/actors/39.json
+PATCH http://localhost:3000/actors/29.json
 Content-Type: application/json
 
 {
+  "first_name": "",
+  "last_name": "b" ,
   "known_for": "Mad Men"
 }
 
 ### DELETES ACTOR
 DELETE http://localhost:3000/actors/15.json
 
+
 ### CREATES A MOVIE
 POST  http://localhost:3000/movies.json
 Content-Type: application/json
 
-{ "title": "Paris, Texas", 
+{ "title": ,
   "year": 1984, 
   "plot": "A disheveled man wanders out of the desert, eventually collecting his abandoned son to find his mother.",
   "director": "Wim Wenders",
