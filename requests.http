@@ -3,11 +3,12 @@ POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
-  "first_name": "",
-  "last_name": "P",
-  "known_for": " Club",
-  "gender": "M",
-  "age": 1
+"first_name": "Gena", 
+"last_name": "Rowlands", 
+"known_for": "A Woman Under the Influence", 
+"gender": "F", 
+"age": 91,
+"movie_id": 3
 }
 
 ### UPDATES ACTOR

@@ -36,3 +36,11 @@ actor = Actor.create(first_name: "Winona",
                      known_for: "Heathers",
                      gender: "F",
                      age: 50)
+
+actor = Actor.create(first_name: "Gena", last_name: "Rowlands", known_for: "A Woman Under the Influence", gender: "F", age: 91)
+
+actor = Actor.create(first_name: "Tim", last_name: "Robbins", known_for: "Jacob's Ladder", gender: "M", age: 63)
+
+actor = Actor.create(first_name: "Nastassja", last_name: "Kinski", known_for: "Paris, Texas", gender: "F", age: 60)
+
+actor = Actor.create(first_name: "Agathe", last_name: "Rousselle", known_for: "Titane", gender: "F", age: 33)
