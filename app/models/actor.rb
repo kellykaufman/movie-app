@@ -8,4 +8,9 @@ class Actor < ApplicationRecord
   validates :known_for, presence: true
 
   validates :age, numericality: { only_integer: true, greater_than: 13 }
+
+  def plot
+    actor = Actor.find_by(movie_id: params[:movie_id])
+    actor.plot
+  end
 end
