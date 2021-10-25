@@ -12,17 +12,19 @@ Content-Type: application/json
 }
 
 ### UPDATES ACTOR
-PATCH http://localhost:3000/actors/29.json
+PATCH http://localhost:3000/actors/34.json
 Content-Type: application/json
 
-{
-  "first_name": "",
-  "last_name": "b" ,
-  "known_for": "Mad Men"
+{ "first_name": "Kelly",
+  "last_name": "Kaufman",
+  "know_for": "Jacob's Ladder",
+  "gender": "F",
+  "age": 30,
+  "movie_id": 5
 }
 
 ### DELETES ACTOR
-DELETE http://localhost:3000/actors/15.json
+DELETE http://localhost:3000/actors/25.json
 
 
 ### CREATES A MOVIE
