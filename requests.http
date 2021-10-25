@@ -5,7 +5,7 @@ Content-Type: application/json
 {
 "first_name": "Gena", 
 "last_name": "Rowlands", 
-"known_for": "A Woman Under the Influence", 
+"known_for": "" , 
 "gender": "F", 
 "age": 91,
 "movie_id": 3
@@ -26,14 +26,13 @@ DELETE http://localhost:3000/actors/15.json
 
 
 ### CREATES A MOVIE
-# MUST FIX TO SHOW: unprocessible entity
 POST  http://localhost:3000/movies.json
 Content-Type: application/json
 
-{ "title": ,
-  "year": 1984, 
-  "plot": "A disheveled man wanders out of the desert, eventually collecting his abandoned son to find his mother.",
-  "director": "Wim Wenders",
+{ "title": "",
+  "year": 2015, 
+  "plot": "While exploring the uncharted wilderness in 1823, frontiersman Hugh Glass sustains life-threatening injuries from a brutal bear attack.",
+  "director": "Alejandro González Iñárritu",
   "english": "Yes"}
 
 
@@ -46,7 +45,7 @@ Content-Type: application/json
   "title": "ChungKing Express",
   "year": 1994,
   "plot": "Every day, Cop buys a can of pineapple with an expiration date of May 1, symbolizing the day he'll get over his lost love.",
-  "director": ,
+  "director": "",
   "english": "No"
 }
 

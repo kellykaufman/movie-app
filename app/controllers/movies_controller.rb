@@ -10,7 +10,8 @@ class MoviesController < ApplicationController
   end
 
   def create
-    movie = Movie.create({ title: params[:title], year: params[:year], plot: params[:plot], director: params[:director], english: params[:english] })
+    movie = Movie.new({ title: params[:title], year: params[:year], plot: params[:plot], director: params[:director], english: params[:english] })
+    movie.save
 
     # HAPPY/SAD PATH
     if movie.save
