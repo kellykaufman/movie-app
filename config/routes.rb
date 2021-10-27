@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  ###USER VERBS
+  get "/users" => "users#index"
+
+  get "/users/:id" => "users#show"
+
+  post "/users" => "users#create"
+
+  patch "/users/:id" => "users#update"
+
+  delete "/users/:id" => "users#destroy"
+
   ### ACTOR VERBS
   get "/actors" => "actors#index"
 
@@ -11,7 +22,6 @@ Rails.application.routes.draw do
   delete "actors/:id" => "actors#destroy"
 
   ### MOVIE VERBS
-  # post "/movies" => "movies#show"
 
   get "/movies" => "movies#index"
 

@@ -1,3 +1,17 @@
+### CREATES A USER
+
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Holy Ghost",
+  "email": "holy@ex.com",
+  "password": "praisebe!",
+  "password_confirmation": "praisebe!"
+
+}
+
+
 ### CREATES ACTOR
 POST http://localhost:3000/actors.json
 Content-Type: application/json
