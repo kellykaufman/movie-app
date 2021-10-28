@@ -4,10 +4,10 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Holy Ghost",
-  "email": "holy@ex.com",
-  "password": "praisebe!",
-  "password_confirmation": "praisebe!"
+  "name": "Bruce Lee",
+  "email": "b@ex.com",
+  "password": "kickass",
+  "password_confirmation": "kickass"
 
 }
 
