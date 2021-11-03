@@ -1,3 +1,13 @@
+### CREATES A MOVIE GENRE
+POST http://localhost:3000/moviegenre.json
+Content-Type: application/json
+
+{
+  "movie_id": 3, 
+  "genre_id": 5
+}
+
+
 ### CREATES A USER
 
 POST http://localhost:3000/users.json

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # MOVIEGENRE VERBS
+  post "/moviegenre" => "movie_genres#create"
+
   ###USER VERBS
   get "/users" => "users#index"
 
