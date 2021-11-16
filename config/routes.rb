@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   delete "/users/:id" => "users#destroy"
 
   ### ACTOR VERBS
+
+  # get "/" => "actors#index"
+
   get "/actors" => "actors#index"
 
   get "/actor/:id" => "actors#show"
